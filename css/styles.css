@@ -503,6 +503,10 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
 /*--------------END FOOTER---------*/
 
 /*--------------- PORTFOLIO-BUTTON------------*/
