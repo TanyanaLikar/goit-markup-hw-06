@@ -75,7 +75,7 @@
         <section class="work-section">
             
             <div class="container">
-                <h2 hidden>Преимущества</h2>
+                <h2 class="visually-hidden">Преимущества</h2>
                 <ul class="list work-list">
                     <li class="work-section-item">
                         <div class="work-section-box"> 
@@ -486,13 +486,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="social-contakt">
+                <div class="footer-form">
                     <h3 class="footer-title ">Подпишитесь на рассылку</h3>
                     <form action="#">
                         <label>
                             <input type="email" class="footer-form-input" placeholder="E-mail">
                         </label>
-                        <button type="submit"> Подписаться</button>
+                        <button type="submit" class="footer-form-btn"> Подписаться</button>
                         <svg class="footer-icon" width="24" height="24">
                             <use href="./images/sprint/icons.svg#icon-icon_send" ></use>
                         </svg>
@@ -504,7 +504,7 @@
         
     </footer>
     <!-- Modal -->
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden " data-modal>
         <div class="modal">
             <button  type="button" class="close-btn" data-modal-close> 
                 <svg class="social-list-icon" width="18" height="18">
@@ -551,8 +551,10 @@
                     <textarea name="user-message" class="modal-form-message" placeholder="Ваше сообщение"></textarea>
                 </label>
 
-                <input type="checkbox" class="modal-form-checkbox"  id="accept-policy">
-                <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="" class="modal-form-label-link"> Условия договора </a> </label>
+                
+                <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy" >
+                <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#"
+                        class="modal-form-label-link">Условия договора</a></label>
 
                 <button type="submit" class="modal-form-btn">Отправить</button>
 
@@ -560,6 +562,6 @@
 
         </div>
     </div>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
 </body>
 </html>
