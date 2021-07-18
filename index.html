@@ -490,17 +490,21 @@
                     <h3 class="footer-title ">Подпишитесь на рассылку</h3>
                     <form action="#">
                         <label>
-                            <input type="email" class="footer-form-input" placeholder="E-mail">
+                            <div class="footer-form-wrapper">
+                                <input type="email" class="footer-form-input" name="E-mail" placeholder="E-mail">
+                                
+                                <button type="submit" class="footer-form-btn"> Подписаться</button>
+                                <svg class="footer-icon" width="24" height="24">
+                                    <use href="./images/sprint/icons.svg#icon-icon_send"></use>
+                                </svg>
+                            </div>
                         </label>
-                        <button type="submit" class="footer-form-btn"> Подписаться</button>
-                        <svg class="footer-icon" width="24" height="24">
-                            <use href="./images/sprint/icons.svg#icon-icon_send" ></use>
-                        </svg>
                     </form>
                 </div>    
             
 
         </div>
+
         
     </footer>
     <!-- Modal -->
@@ -552,7 +556,7 @@
                 </label>
 
                 
-                <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy" >
+                <input type="checkbox" class="modal-form-checkbox visually-hidden" name="checkbox" id="accept-policy" >
                 <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#"
                         class="modal-form-label-link">Условия договора</a></label>
 
