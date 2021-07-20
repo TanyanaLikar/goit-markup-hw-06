@@ -676,8 +676,8 @@ body {
   background-origin: padding-box;
   border: transparent;
 }
-.modal-form-checkbox:checked:focus + .modal-form-checkbox-label::before {
-  background-color: var(--accent-color);
+.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
+  border-color: var(--accent-color);
 }
 .modal-form-btn {
   align-self: center;
